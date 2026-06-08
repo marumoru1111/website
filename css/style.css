@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    font-family:"Arial", sans-serif;
+    background:linear-gradient(135deg,#f8d7df,#f5f1eb) ;
+    color:#333;
+}
+.sidebar{
+    width: 100%;
+    background: linear-gradient(180deg,#d77b78,#a96f78);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.sidebar h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.sidebar div { 
+    display: flex;               
+    gap: 10px;                    
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.2s;
+
+}
+
+.sidebar a:hover{
+    background: rgba(255,255,255,0.25);
+}
+.main-content {
+    margin-left: 0;
+    margin-top: 70px;
+    padding: 40px 20px;
+    min-height: calc(100vh - 70px);
+
+}
+.card{
+    max-width: 850px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.8);
+    padding: 45px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+}
+h1{
+    color: #c45b70;
+    font-size: 42px;
+    margin-bottom: 10px;
+
+}
+h3{
+    color: #8d5c66;
+    font-size: 24px;
+
+}
+p{
+    line-height: 1.8;
+    font-size: 16px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+input, textarea{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 25px;
+    background: #f3f0ec;
+    font-size: 15px;
+
+}
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background: #a96f78;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #d77b83;
+
+}
+footer{
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+}
+
+.sidebar, .main-content{
+    animation: show 0.5s ease-out;
+
+}
+@keyframes show{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.円形コンテナ{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.円形{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.円形:hover{
+    transform: scale(1.1);
+}
+.line{
+    background-color: green;
+}
+.facebook{background-color: blue;}
+.x{background-color: black;}
+.insta{background-color: #d77b83;}
+.youtube{background-color: red;}
+
+.image-grid table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+
+/* 各マス（td）に線を引く */
+.image-grid table td {
+    border: 2px solid #a96f78; 
+    padding: 15px;             
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.image-grid table td a {
+    display: block; 
+    text-decoration: none;   
+    border: none;
+    outline: none;
+}
+
+.image-grid table img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;       
+    display: block;            
+    transition: 0.3s;
+    margin-bottom: 0;
+}
+
+.image-grid table td a:hover img {
+    opacity: 0.8;
+    transform: scale(1.03);
+    box-shadow: 0 0 3px rgba(169, 111, 120, 0.5); 
+}
+
+.table-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #a96f78;          
+    text-decoration: none;   
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: 1px solid #a96f78;
+    border-radius: 15px;     
+    transition: 0.2s;
+}
+
+.table-link:hover {
+    background-color: #a96f78;
+    color: white;            
+}
+
+
+
+
